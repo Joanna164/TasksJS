@@ -5,12 +5,6 @@ const addRandomPicture = () => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => generatePicture(data[0].url))
-    // .then((data) => {
-    //   return document.body.insertAdjacentHTML(
-    //     "beforeend",
-    //     `<img data-test = "img-kitty" src ="${url}">${data[0].url}`
-    //   );
-    // })
     .catch((err) => console.error(err));
 };
 

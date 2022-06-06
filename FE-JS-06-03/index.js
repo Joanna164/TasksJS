@@ -10,7 +10,7 @@ const getCurrencyList = () => {
   fetch(url)
     .then((respone) => respone.json())
     .then((data) => console.log(data.base))
-    .then((error) => console.error(error));
+    .catch((error) => console.error(error));
 };
 
 const createElement = (url) => {
